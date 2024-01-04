@@ -11,6 +11,7 @@
     background-position: bottom center;
     background-size:cover;
     background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 50% 100%, 0 80%);
     
 }
 
@@ -32,9 +33,9 @@
     margin: 50px auto;
     background-color: darkgray;
     padding: 50px;
-    border: 15px groove darkcyan ;
+   
 }
-.article h2{
+.article h2, .types h2{
     text-align: center;
     font-size: 48px;
     border-bottom: 4px solid darkolivegreen;
@@ -45,3 +46,17 @@
     font-weight: bolder;
 }
 
+.flexing{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.flexing div{
+    width: 300px;
+}
+
+.flexing img{
+    width: 100%;
+}
